@@ -1,37 +1,36 @@
 ---
-title: Introduction to Guidelines for IOOS SOS 1.0
-keywords: sample homepage
-tags: [getting_started]
-#sidebar: home_sidebar
+title: "IOOS Observing Asset Identifiers: Convention for Asset Identification"
+tags: []
+keywords: notes, tips, cautions, warnings, admonitions
+last_updated: July 3, 2016
+summary: Rules used by the IOOS program to assign an identifier to IOOS-related observing assets.
 sidebar: mydoc_sidebar
-topnav: topnav
+#topnav: topnav
 toc: false
-#permalink: index.html
-summary: This brief description summarizes the content of the Guidelines. The other topics on this site provide additional information and detail about working with all aspects of the IOOS SOS 1.0.
+#permalink: sos-wsdd-github-notoc.html
 ---
 
-## IOOS SOS Application Profile
+<!--   
+* TOC
+{:toc}
+ -->
 
-U.S. IOOS distributes ocean observations using the OGC Sensor Observation Service. To support this effort U.S. IOOS has developed a profile of SOS v1.0 (henceforth IOOS SOS v1.0) that includes specific behaviors for the SOS interface and for the output formats delivered in response to the three operations of the SOS Core Profile.
-The GitHub repository contains documentation of the IOOS SOS v1.0 profile, example templates for the responses, and information on two reference implementations developed to support the IOOS SOS v1.0 profile. To facilitate the practical implementation of the SOS, IOOS has developed the IOOS Application Profile (AP) for SOS, which includes a series of operation templates, controlled vocabularies, IOOS Conventions for SOS Implementation, and a set of tests for IOOS SOS implementations.
 
-### IOOS SOS 1.0 WSDD
+## **About IOOS Convention**{: style="color: crimson"}
 
-The Web Service Description Document (WSDD) provides a description of a Sensor Observation Service (SOS) that has been developed by U.S. IOOS for deployment by NOAA data providers and IOOS Regional Associations (RAs). This service provides a service consumer with the capability to access ocean observations data products, such as time series and profiles, which have XML-based encodings and included in the SWE Common Data Model.
+The IOOS Convention for Asset Identification describes rules that are used by the IOOS program to assign identifiers to IOOS-related observing assets including measurement stations, sensors, and processes. IOOS identifier is the name by which further metadata about the asset may be requested from IOOS web services.
 
-### IOOS SOS 1.0 Templates
+Apart from the IOOS, each asset may also be identified by other communities, and many assets have numbers or labels assigned to them by an external authority. For example, every weather buoy has a World Meteorological Organization (WMO) number. The IOOS identifiers allow for and make use of such identifiers. However, rather than merely use the number (e.g., 42001) which could refer to a buoy in the Gulf of Mexico or the postal code for Paducah, Kentucky or the section of the California Vehicle Code that describes fines imposed for moving violations, the IOOS identifiers add some semantics to indicate (a) the authority which assigned the number or name and (b) that the asset is somehow associated with IOOS. Being “associated with IOOS” in this context typically means that data from that asset could be discovered or accessed through the IOOS data management layer.
 
- * GetCapabilities: A template for generic (independent of feature type) GetCapabilities response.
- * DescribeSensor-Network: A template for generic (independent of feature type) SensorML DescribeSensor response (network of stations)
- * DescribeSensor-Station: A template for generic (independent of feature type) SensorML DescribeSensor response (single station)
- * OM GetObservation: A template for a generic (independent of feature type) GetObservation response (the result block in this template is empty; see SWE templates for guidance on the result block)
-* SWE-SingleStation-SingleProperty-TimeSeries: A template for SWE Data Record’s static and dynamic fields (single station with a single sensor)
- * SWE-SingleStation-TimeSeriesProfile: A template for SWE Data Record’s static and dynamic fields (a station with profiling sensors)
- * SWE-SingleStation-TimeSeriesProfile-QC: A template for SWE Data Record’s static and dynamic fields (a station with profiling sensors including quality elements for some quantities)
- * SWE-MultiStation-TimeSeries: A template for SWE Data Record’s static and dynamic fields (multiple stations with a variety of sensors)
- * SWE-MultiStation-TimeSeries-QC: A template for SWE Data Record’s static and dynamic fields (multiple stations with a variety of sensors including quality elements for some quantities)
+## [**IOOS Convention v1.0**{: style="color: crimson"}](./ioos-assets-v1-0.html)
 
-### IOOS SOS 1.0 Compliance and Interoperability Tests
+This is the current valid version of the IOOS Convention for Asset Identification that was initially adopted in 2013; apart from multiple editorial corrections, it provides the enhanced identification of gliders, and sensors as a result of intensive discussions within IOOS community.
 
-This document describes a collection of tests that have to be run in order to ensure a required level of compliance with IOOS SOS Profile 1.0 (IOOS Convention), and official OGC SOS 1.0.0 specification.
+## [**IOOS Convention v0.5 (DEPRECATED)**{: style="color: crimson"}](./ioos-assets-wiki-upd-v0-5.html)
+
+This document provides a guidance for the asset identification process. For the data to be discoverable and accessible through the IOOS Data Catalog, all observing assets must be identified in accord with the present IOOS Convention.
+
+## [**IOOS Convention v0.1 (DEPRECATED)**{: style="color: crimson"}](./ioos-assets-wiki-init-v0-1.html)
+
+Initial version of the guidance for the asset identification process. For the data to be discoverable and accessible through the IOOS Data Catalog, all observing assets must be identified in accord with the present IOOS Convention.
 

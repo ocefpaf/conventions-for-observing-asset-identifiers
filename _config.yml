@@ -1,7 +1,8 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: IOOS SOS Guidelines Home
+topnav_title: Home
+#topnav_title: IOOS Observing Asset Identifiers Home
 # this appears on the top navigation bar next to the home button
 
 site_title: IOOS GitHub Documentation
@@ -135,11 +136,11 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 
 # added settings for IOOS:
 url                      : "https://abirger.github.io"
-baseurl                  : "/sos-guidelines-jekyll"
+baseurl                  : "/conventions-for-observing-asset-identifiers"
 
-repository               : "abirger/documentation-theme-jekyll"
+repository               : "abirger/conventions-for-observing-asset-identifiers"
 
-github_editme_path       : abirger/sos-guidelines-jekyll
+github_editme_path       : "abirger/conventions-for-observing-asset-identifiers/blob/gh-pages/_docs"
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 #Setup/config for 'ioos_jekyll_theme' git submodule:
