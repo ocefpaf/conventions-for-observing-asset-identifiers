@@ -10,10 +10,10 @@ toc: false
 #permalink: sos-wsdd-github-notoc.html
 ---
 
-
+<!--   
 * TOC
 {:toc}
-<!--    -->
+ -->
 
 {::nomarkdown}<p style="color:red; font-size:120%; border:3px solid red; padding:15px;"> DISCLAIMER: This is an <b>OBSOLETE</b> version of the document that was <b>DEPRECATED</b> as an official IOOS document. <br>Please <b>DO NOT</b> refer to this publication.</p>{:/}
 <br>
@@ -59,6 +59,7 @@ For the sake of illustration, we first provide examples of identifiers in use by
 |Active water level sensors within CO-OPS network of stations | urn:ioos:network:NOAA.NOS.CO-OPS:WaterLevelActive |
 |Water level sensor at CO-OPS station 8454000 | urn:ioos:sensor:NOAA.NOS.CO-OPS:8454000:D1 |
 |Nortek Acoustic Doppler Profiler sensor that is measuring water currents and/or waves and is mounted on the CO-OPS cb0201 station | style=white-space:nowrap |  urn:ioos:sensor:NOAA.NOS.CO-OPS:cb0201:Nortek-ADP-514 |
+
 <br>
 
 ## **General Identifier Convention**{: style="color: crimson"}
@@ -76,7 +77,7 @@ The additional fields may only include letters and numbers (_**A-Z**_, _**a-z**_
 Special characters not in the foregoing list must be represented using hexadecimal encoding as _**%xx**_, where **xx** represents a two-digit hex value. The use of such characters in IOOS URNs is not recommended.
 <br>
 
-### **Case-insensitivity**{: style="color: crimson"}
+### **Case Insensitivity**{: style="color: crimson"}
 
 IOOS URNs are considered to be case-insensitive. Example: _**urn:ioos:ABC**_ and _**urn:ioos:abc**_ refer to the same thing. This is more restrictive than, but permitted by, IETF RFC 2141.  The fields in IOOS URNs are customarily lower-case but may appear in uppercase or mixed-case.
 <br>
@@ -194,7 +195,7 @@ _**urn:ioos:station:authority:label_station:component[:version]**_
 Depending on the option, sensor is identified either by its _**label_sensor**_, or by a station _**component**_ field, which provides a name for the sensor.  The specific names are at the discretion of the organization operating the sensor or the service to access data from the sensor. The _**component**_ and _**label_sensor**_ values may vary for the same sensor, and may reflect the make and model of the sensor (e.g., ''SONTEK-ADP-419''), the phenomenon observed by that sensor (e.g., ''salinity''), or an arbitrary label used by the organization (e.g., ''A1''). The name may not include characters not allowed in Section 3.1.
 <br>
 
-#### **Version**{: style="color: crimson"}
+### **Version Control**{: style="color: crimson"}
 
 Currently, IOOS Convention does not regulate asset versioning; therefore, no requirements have been established for the version number report. It is strongly recommended to avoid referring to any version number at all in asset's URN.
 <br>

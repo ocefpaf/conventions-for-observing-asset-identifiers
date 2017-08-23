@@ -1,5 +1,5 @@
 ---
-title: "IOOS Observing Asset Identifiers: Convention for Asset Identification"
+title: "IOOS Convention for Asset Identification"
 tags: []
 keywords: notes, tips, cautions, warnings, admonitions
 last_updated: July 3, 2016
