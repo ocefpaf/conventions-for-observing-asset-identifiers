@@ -1,7 +1,7 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Home
+topnav_title: IOOS Asset Identification Home
 #topnav_title: IOOS Observing Asset Identifiers Home
 # this appears on the top navigation bar next to the home button
 
