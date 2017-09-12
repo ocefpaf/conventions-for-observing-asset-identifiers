@@ -1,2 +1,2 @@
-# sos-guidelines-jekyll
-IOOS SOS Guidelines pages with Jekyll Documentation Theme
+# conventions-for-observing-asset-identification
+IOOS Asset Identification Convention pages with Jekyll Documentation Theme
