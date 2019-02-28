@@ -2,9 +2,9 @@
 
 entries:
 - title: sidebar
-  product: IOOS Observing Asset Identification
+  product: Menu
   levels: three
-  version: 
+  version:
   folders:
 
   - title:
@@ -20,17 +20,21 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: "About IOOS Convention for Asset Identification"
+  - title: Introduction
     output: web
 
     folderitems:
 
-    - title: Summary
+    - title: About IOOS Convention
       url: /index.html
       output: web
 
+    - title: Versions
+      url: /index.html#versions
+      output: web
 
-  - title: "Version 1.0 (ACTIVE)"
+
+  - title: "Version 1.0 (Active)"
     output: web, pdf
 
     folderitems:
@@ -119,7 +123,7 @@ entries:
           url: /ioos-assets-v1-0.html#survey-identifiers
           output: web
 
-  - title: "Version 0.5 (DEPRECATED)"
+  - title: "Version 0.5 (Deprecated)"
     output: web, pdf
 
     folderitems:
@@ -196,7 +200,7 @@ entries:
           url: /ioos-assets-wiki-upd-v0-5.html#survey-identifiers
           output: web
 
-  - title: "Version 0.1 (DEPRECATED)"
+  - title: "Version 0.1 (Deprecated)"
     output: web, pdf
 
     folderitems:
@@ -276,4 +280,3 @@ entries:
         - title: "Visual Observations from Ships"
           url: /ioos-assets-wiki-init-v0-1.html#visual-observations-from-ships
           output: web
-

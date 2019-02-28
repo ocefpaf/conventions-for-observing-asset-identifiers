@@ -20,34 +20,34 @@ toc: false
 
 
 
-## **Revision History**{: style="color: crimson"}
+## **Revision History**
 
 | Version | Description | Date |
 |---------|-------------|----- |
 | 0.0.1 | First draft | 2010-12-22 |
 | 0.1 | Streamlined and cleaned up draft | 2013-12-06 |
 
-## **Contributors**{: style="color: crimson"}
+## **Contributors**
 
 | Name  | Role | Association  |
 |:---|:---|:----|
 |Jeff de La Beaujardière | Author| NOAA/NESDIS/Technology Planning and Integration Office |
 |Derrick Snowden | Contributor | U.S. IOOS Office |
-|Carmel Ortiz | Contributor | U.S. IOOS Office | 
+|Carmel Ortiz | Contributor | U.S. IOOS Office |
 |Alex Birger | Contributor | U.S. IOOS Office |
 |Anna Milan | Contributor | NOAA National Geophysical Data Center (NGDC) |
 
 
-## **References**{: style="color: crimson"}
+## **References**
 
 [**IETF RFC 2141**](http://tools.ietf.org/html/rfc2141-http://tools.ietf.org/html/rfc2141)
 
 <br>
 <br>
 
-## **Informative Examples**{: style="color: crimson"}
+## **Informative Examples**
 
-For the sake of illustration, we first provide examples of identifiers in use by IOOS. Later sections of this document constitute the actual specification of those identifiers.  In the case of conflict or ambiguity, the specification sections take precedence over these examples. 
+For the sake of illustration, we first provide examples of identifiers in use by IOOS. Later sections of this document constitute the actual specification of those identifiers.  In the case of conflict or ambiguity, the specification sections take precedence over these examples.
 <br>
 
 
@@ -62,9 +62,9 @@ For the sake of illustration, we first provide examples of identifiers in use by
 
 <br>
 
-## **General Identifier Convention**{: style="color: crimson"}
+## **General Identifier Convention**
 
-### **Use of Uniform Resource Names**{: style="color: crimson"}
+### **Use of Uniform Resource Names**
 
 An IOOS identifier is a Uniform Resource Name (URN). URNs are commonly used as identifiers in the Internet\’s information architecture. An introductory description of URNs may be found on [Wikipedia](http://en.wikipedia.org/wiki/Uniform_Resource_Name). Some of the material in this section is based on definitions and restrictions established by Internet [Engineering Task Force (IETF) Request for Comments (RFC) 2141](http://tools.ietf.org/html/rfc2141).
 
@@ -77,12 +77,12 @@ The additional fields may only include letters and numbers (_**A-Z**_, _**a-z**_
 Special characters not in the foregoing list must be represented using hexadecimal encoding as _**%xx**_, where **xx** represents a two-digit hex value. The use of such characters in IOOS URNs is not recommended.
 <br>
 
-### **Case Insensitivity**{: style="color: crimson"}
+### **Case Insensitivity**
 
 IOOS URNs are considered to be case-insensitive. Example: _**urn:ioos:ABC**_ and _**urn:ioos:abc**_ refer to the same thing. This is more restrictive than, but permitted by, IETF RFC 2141.  The fields in IOOS URNs are customarily lower-case but may appear in uppercase or mixed-case.
 <br>
 
-### **Identifier Pattern**{: style="color: crimson"}
+### **Identifier Pattern**
 
 The general pattern for IOOS asset identifiers is
 
@@ -108,17 +108,17 @@ _**component**_
 The following sections explain in details the use of all variable fields.  Ideally these fields will be populated with values from community governed controlled vocabularies.  While this is not mandated by this specification, some candidate vocabularies are suggested in the following sections.
 <br>
 
-### **Asset Type**{: style="color: crimson"}
+### **Asset Type**
 
 The _**asset_type**_ field indicates the type of asset to which this identifier applies. The following values for _**asset_type**_ are recognized by IOOS:
 
 **station**
-:   A fixed installation or nominally-constant position where measurements are performed.  Examples include: a water-level gauge mounted on a pier; a moored buoy that moves within a known watch radius of the nominal mooring location; an OceanSITES deep-water monitoring location; a site at which water quality samples are taken. 
+:   A fixed installation or nominally-constant position where measurements are performed.  Examples include: a water-level gauge mounted on a pier; a moored buoy that moves within a known watch radius of the nominal mooring location; an OceanSITES deep-water monitoring location; a site at which water quality samples are taken.
 
-:   A _**component**_ field may be added to the URN to identify a specific sensor located at the station. If _**component**_ field is omitted, the URN identifies station itself. 
+:   A _**component**_ field may be added to the URN to identify a specific sensor located at the station. If _**component**_ field is omitted, the URN identifies station itself.
 
 **network**
-:   A network of stations defined above. 
+:   A network of stations defined above.
 
 **sensor**
 :   A device associated with the station that measures one or more observed quantities at or adjacent to the station location. Examples include: a water-level sensor; a temperature sensor; an anemometer; a current meter. A sensor identifier URN includes the _**authority**_ and _**label**_ fields of the station, and a _**component**_ field to distinguish it from other sensors at the same station. Note that _**label**_ for sensor is different from _**label**_ for station.
@@ -134,7 +134,7 @@ Additional _**asset_type**_ values may be added by IOOS as needed.  Candidate co
 * [GCMD Instrument types](http://gcmdservices.gsfc.nasa.gov/static/kms/instruments/instruments.csv)
 <br>
 
-### **Authority**{: style="color: crimson"}
+### **Authority**
 
 The _**authority**_ field indicates the organization that assigned the label for this asset. There is no fixed set of values, because additional authorities may become relevant as new observing systems are connected to IOOS. However, the same abbreviation or name should be used for all instances of a particular authority. These abbreviations are case insensitive.  The following values for _**authority**_ are currently used in IOOS:
 
@@ -160,28 +160,28 @@ Candidate controlled vocabularies that may be adopted as valid values for the _*
   * Projects: http://gcmdservices.gsfc.nasa.gov/static/kms/projects/projects.csv
 <br>
 
-### **Label**{: style="color: crimson"}
+### **Label**
 
 The _**label**_ is a number or string assigned by the Authority to the asset. Allowed values are defined by the particular authority. The only restrictions are that (a) the characters used must not conflict with the URN specification (see section 2.1) and (b) labels in the scope of a given authority must be unique.
 The _**label**_ value varies between station and sensor URNs.
 <br>
 
-### **Component**{: style="color: crimson"}
+### **Component**
 
 The _**component**_ field is used to distinguish between different assets associated with the same parent asset. For example, a buoy may have multiple sensors attached to it, and each sensor will have an identifier that includes the label for the buoy and the label for the sensor.  The component label must be unique for each _**asset\_type**_:_**authority**_:_**label**_.
 <br>
 
 
 
-## **Convention for Specific Asset Types**{: style="color: crimson"}
+## **Convention for Specific Asset Types**
 
-### **Station Identifiers**{: style="color: crimson"}
+### **Station Identifiers**
 
 The pattern for IOOS platform identifiers is _**urn:ioos:station:authority:label\[:version\]**_
 Platform identifiers do not include a _**component**_ field.
 <br>
 
-### **Sensor Identifiers**{: style="color: crimson"}
+### **Sensor Identifiers**
 
 The pattern for IOOS sensor identifiers may be either
 
@@ -195,16 +195,16 @@ _**urn:ioos:station:authority:label_station:component[:version]**_
 Depending on the option, sensor is identified either by its _**label_sensor**_, or by a station _**component**_ field, which provides a name for the sensor.  The specific names are at the discretion of the organization operating the sensor or the service to access data from the sensor. The _**component**_ and _**label_sensor**_ values may vary for the same sensor, and may reflect the make and model of the sensor (e.g., ''SONTEK-ADP-419''), the phenomenon observed by that sensor (e.g., ''salinity''), or an arbitrary label used by the organization (e.g., ''A1''). The name may not include characters not allowed in Section 3.1.
 <br>
 
-### **Version Control**{: style="color: crimson"}
+### **Version Control**
 
 Currently, IOOS Convention does not regulate asset versioning; therefore, no requirements have been established for the version number report. It is strongly recommended to avoid referring to any version number at all in asset's URN.
 <br>
 
-### **Survey Identifiers**{: style="color: crimson"}
+### **Survey Identifiers**
 
 (To be discussed)
 
-### **Visual Observations from Ships**{: style="color: crimson"}
+### **Visual Observations from Ships**
 
 (this is probably the same as survey identifiers)
 
@@ -212,7 +212,7 @@ Observer (i.e. _**urn:ioos:observer:...**_) seems just as good as other choices.
 
 I think it would be good to also indicate either (1) the general observing protocol or (2) the specific type of observation, as follows: 
 
-#### **General observing protocol**{: style="color: crimson"}
+#### **General observing protocol**
 
 If visual estimates are made according to, for example, the [NWS Observing Handbook No. 1 (2004)](http://www.vos.noaa.gov/ObsHB-508/ObservingHandbook1_2004_508_compliant.pdf), then perhaps the so-called “sensor” ID could be something like 
 
@@ -224,7 +224,7 @@ http://www.vos.noaa.gov/ObsHB-508/ObservingHandbook1_2004_508_compliant.pdf
 
 This avoids any need for additional interpretation. In the IOOS water quality project we have seen another case where the “metadata” about the measurement procedure is a PDF file containing descriptions of laboratory procedures. 
 
-#### **Specific type of observation**{: style="color: crimson"}
+#### **Specific type of observation**
 
 The identifier could include the type of observation made by the human. 
 
@@ -249,5 +249,3 @@ I don’t know whether (1) or (2) or neither is best. I’m assuming that some d
 
 
  
-
-

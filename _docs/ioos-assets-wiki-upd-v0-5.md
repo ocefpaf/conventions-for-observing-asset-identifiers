@@ -18,7 +18,7 @@ toc: false
 {::nomarkdown}<p style="color:red; font-size:120%; border:3px solid red; padding:15px;"> DISCLAIMER: This is an <b>OBSOLETE</b> version of the document that was <b>DEPRECATED</b> as an official IOOS document. <br>Please <b>DO NOT</b> refer to this publication.</p>{:/}
 <br>
 
-## **Revision History**{: style="color: crimson"}
+## **Revision History**
 
 | Version | Description              | Date       |
 |---------|--------------------------|------------|
@@ -26,18 +26,18 @@ toc: false
 | 0.1 | Streamlined and cleaned up draft | 2013-12-06 |
 | 0.5 | Fixed typos and minor editing for Milestone 1.0 | 2014-08-31 |
 
-## **Contributors**{: style="color: crimson"}
+## **Contributors**
 
 | Name  | Role | Association  |
 |:---|:---|:----|
 |Jeff de La Beaujardière | Author| NOAA/NESDIS/Technology Planning and Integration Office |
 |Derrick Snowden | Contributor | U.S. IOOS Office |
-|Carmel Ortiz | Contributor | U.S. IOOS Office | 
+|Carmel Ortiz | Contributor | U.S. IOOS Office |
 |Alex Birger | Contributor | U.S. IOOS Office |
 |Anna Milan | Contributor | NOAA National Geophysical Data Center (NGDC) |
 
 
-## **References**{: style="color: crimson"}
+## **References**
 
 [**IETF RFC 2141**](http://tools.ietf.org/html/rfc2141-http://tools.ietf.org/html/rfc2141)
 
@@ -45,7 +45,7 @@ toc: false
 <br>
 
 
-## **Informative Examples**{: style="color: crimson"}
+## **Informative Examples**
 
 For the sake of illustration, we first provide examples of identifiers in use by IOOS. Later sections of this
 document constitute the actual specification of those identifiers.  In the case of conflict or ambiguity, the
@@ -60,9 +60,9 @@ specification sections take precedence over these examples.
 |Water level sensor at CO-OPS station 8454000 | __`urn:ioos:sensor:NOAA.NOS.CO-OPS:8454000:D1`__ |
 |Nortek Acoustic Doppler Profiler sensor that is measuring water currents and/or waves and is mounted on the CO-OPS cb0201 station | __`urn:ioos:sensor:NOAA.NOS.CO-OPS:cb0201:Nortek-ADP-514`__ |
 
-## **General Identifier Convention**{: style="color: crimson"}
+## **General Identifier Convention**
 
-### **Use of Uniform Resource Names**{: style="color: crimson"}
+### **Use of Uniform Resource Names**
 
 An IOOS identifier is a Uniform Resource Name (URN). URNs are commonly used as identifiers in the Internet’s
 information architecture. An introductory description of URNs may be found on
@@ -83,13 +83,13 @@ following characters: _**( ) + , - . = @ ; $ _ ! \***_
 Special characters not in the foregoing list must be represented using hexadecimal encoding as _**%xx**_,
 where **xx** represents a two-digit hex value. The use of such characters in IOOS URNs is not recommended.
 
-### **Case Insensitivity**{: style="color: crimson"}
+### **Case Insensitivity**
 
 IOOS URNs are considered to be case-insensitive. Example: `urn:ioos:ABC` and `urn:ioos:abc` refer to the same thing.
 This is more restrictive than, but permitted by, IETF RFC 2141.  The fields in IOOS URNs are customarily lower-case
 but may appear in uppercase or mixed-case.
 
-### **Identifier Pattern**{: style="color: crimson"}
+### **Identifier Pattern**
 
 The general pattern for IOOS asset identifiers is
 
@@ -111,7 +111,7 @@ The following sections explain in details the use of all variable fields.  Ideal
 populated with values from community governed controlled vocabularies.  While this is not mandated by this
 specification, some candidate vocabularies are suggested in the following sections.
 
-#### **Asset Type**{: style="color: crimson"}
+#### **Asset Type**
 
 The __`asset_type`__ field indicates the type of asset to which this identifier applies. The following values
 for __`asset_type`__ are recognized by IOOS:
@@ -124,7 +124,7 @@ A __`component`__ field may be added to the URN to identify a specific sensor lo
 If __`component`__ field is omitted, the URN identifies station itself.
 
 _**network**_
-:   A network of stations defined above. 
+:   A network of stations defined above.
 
 _**sensor**_
 :   A device associated with the station that measures one or more observed quantities at or adjacent to the
@@ -145,7 +145,7 @@ be adopted as the valid values in the __`asset_type`__ field are:
 * [BODC Instruments List](http://mmisw.org/orr/#http://vocab.ndg.nerc.ac.uk/list/L221/current)
 * [GCMD Instrument types](http://gcmdservices.gsfc.nasa.gov/static/kms/instruments/instruments.csv)
 
-#### **Authority**{: style="color: crimson"}
+#### **Authority**
 
 The __`authority`__ field indicates the organization that assigned the label for this asset. There is no fixed
 set of values, because additional authorities may become relevant as new observing systems are connected to IOOS.
@@ -174,14 +174,14 @@ Candidate controlled vocabularies that may be adopted as valid values for the __
   * Data Centers: http://gcmdservices.gsfc.nasa.gov/static/kms/providers/providers.csv
   * Projects: http://gcmdservices.gsfc.nasa.gov/static/kms/projects/projects.csv
 
-#### **Label**{: style="color: crimson"}
+#### **Label**
 
 The __`label`__ is a number or string assigned by the Authority to the asset. Allowed values are defined by the
 particular authority. The only restrictions are that (a) the characters used must not conflict with the URN
 specification (see section 2.1) and (b) labels in the scope of a given authority must be unique.
 The __`label`__ value varies between station and sensor URNs.
 
-#### **Component**{: style="color: crimson"}
+#### **Component**
 
 The __`component`__ field is used to distinguish between different assets associated with the same parent asset.
 For example, a buoy may have multiple sensors attached to it, and each sensor will have an identifier that includes
@@ -189,14 +189,14 @@ the label for the buoy and the label for the sensor.  The component label must b
 __`asset_type:authority:label`__.
 
 
-## **Convention for Specific Asset Types**{: style="color: crimson"}
+## **Convention for Specific Asset Types**
 
-### **Station Identifiers**{: style="color: crimson"}
+### **Station Identifiers**
 
 The pattern for IOOS platform identifiers is __`urn:ioos:station:authority:label[:version]`__.
 Platform identifiers do not include a __`component`__ field.
 
-### **Sensor Identifiers**{: style="color: crimson"}
+### **Sensor Identifiers**
 
 The pattern for IOOS sensor identifiers may be either
 
@@ -214,12 +214,12 @@ sensor, and may reflect the make and model of the sensor (e.g., `SONTEK-ADP-419`
 sensor (e.g., `salinity`), or an arbitrary label used by the organization (e.g., `A1`). The name may not include
 characters not allowed in Section 3.1.
 
-### **Version Control**{: style="color: crimson"}
+### **Version Control**
 
 Currently, IOOS Convention does not regulate asset versioning; therefore, no requirements have been established for
 the version number report. It is strongly recommended to avoid referring to any version number at all in asset's URN.
 
-### **Survey Identifiers**{: style="color: crimson"}
+### **Survey Identifiers**
 
 A survey identifier URN includes the __`authority`__ and __`label`__ fields of the station or a ship, and a __`component`__
 field to distinguish it from other surveys at the same station or ship:
@@ -229,7 +229,7 @@ __`urn:ioos:survey:authority:label[:component]`__
 For visual observation purpose, the __`authority`__,  __`label`__, and __`component`__ fields may also indicate either
 (1) the general observing protocol or (2) the specific type of observation.
 
-#### **General observing protocol**{: style="color: crimson"}
+#### **General observing protocol**
 
 If visual estimates are made according to some established observing protocol, then the __`authority`__ field may contain
 a reference to the document that describes the protocol. For example, if observation was made by the
@@ -244,7 +244,7 @@ In the case of the NWS Observing Handbook, for example, the following URL may pl
 
 _**http://www.vos.noaa.gov/ObsHB-508/ObservingHandbook1_2004_508_compliant.pdf**_
 
-#### **Specific type of observation**{: style="color: crimson"}
+#### **Specific type of observation**
 
 The survey identifier may include the type of observation made by the human. For example, in the NWS Handbook, Chapter 2,
 page 2-7 says that "iw" is the "wind speed indicator", and that it has values 0, 1, 3, 4 depending on how the wind speed
@@ -262,5 +262,5 @@ Similarly, from p.2-76, sea surface temperature measurement can be identified as
 __`urn:ioos:survey:ss:1`__
 
 or
- 
+
 __`urn:ioos:survey:sst_indicator:negative_intake_measurement`__
