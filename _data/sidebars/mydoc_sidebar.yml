@@ -34,7 +34,7 @@ entries:
       output: web
 
 
-  - title: "Version 1.0 (Active)"
+  - title: Version 1.0 (Active)
     output: web, pdf
 
     folderitems:
@@ -61,69 +61,69 @@ entries:
 
       subfolders:
 
-      - title: "General Identifier Convention"
+      - title: General Identifier Convention
         output: web
 
         subfolderitems:
 
-        - title: "Use of Uniform Resource Names"
+        - title: Use of Uniform Resource Names
           url: /ioos-assets-v1-0.html#use-of-uniform-resource-names
           output: web
 
-        - title: "Case Insensitivity"
+        - title: Case Insensitivity
           url: /ioos-assets-v1-0.html#case-insensitivity
           output: web
 
-        - title: "Identifier Pattern"
+        - title: Identifier Pattern
           url: /ioos-assets-v1-0.html#identifier-pattern
           output: web
 
-        - title: "Asset Type"
+        - title: Asset Type
           url: /ioos-assets-v1-0.html#asset-type
           output: web
 
-        - title: "Authority"
+        - title: Authority
           url: /ioos-assets-v1-0.html#authority
           output: web
 
-        - title: "Label"
+        - title: Label
           url: /ioos-assets-v1-0.html#label
           output: web
 
-        - title: "Component"
+        - title: Component
           url: /ioos-assets-v1-0.html#component
           output: web
 
-        - title: "Discriminant"
+        - title: Discriminant
           url: /ioos-assets-v1-0.html#discriminant
           output: web
 
-        - title: "Functional Parameters"
+        - title: Functional Parameters
           url: /ioos-assets-v1-0.html#functional-parameters
           output: web
 
-      - title: "Convention for Specific Asset Types"
+      - title: Convention for Specific Asset Types
         output: web
 
         subfolderitems:
 
-        - title: "Station Identifiers"
+        - title: Station Identifiers
           url: /ioos-assets-v1-0.html#station-identifiers
           output: web
 
-        - title: "Sensor Identifiers"
+        - title: Sensor Identifiers
           url: /ioos-assets-v1-0.html#sensor-identifiers
           output: web
 
-        - title: "Version Control"
+        - title: Version Control
           url: /ioos-assets-v1-0.html#version-control
           output: web
 
-        - title: "Survey Identifiers"
+        - title: Survey Identifiers
           url: /ioos-assets-v1-0.html#survey-identifiers
           output: web
 
-  - title: "Version 0.5 (Deprecated)"
+  - title: Version 0.5 (Deprecated)
     output: web, pdf
 
     folderitems:
@@ -146,61 +146,61 @@ entries:
 
       subfolders:
 
-      - title: "General Identifier Convention"
+      - title: General Identifier Convention
         output: web
 
         subfolderitems:
 
-        - title: "Use of Uniform Resource Names"
+        - title: Use of Uniform Resource Names
           url: /ioos-assets-wiki-upd-v0-5.html#use-of-uniform-resource-names
           output: web
 
-        - title: "Case Insensitivity"
+        - title: Case Insensitivity
           url: /ioos-assets-wiki-upd-v0-5.html#case-insensitivity
           output: web
 
-        - title: "Identifier Pattern"
+        - title: Identifier Pattern
           url: /ioos-assets-wiki-upd-v0-5.html#identifier-pattern
           output: web
 
-        - title: "Asset Type"
+        - title: Asset Type
           url: /ioos-assets-wiki-upd-v0-5.html#asset-type
           output: web
 
-        - title: "Authority"
+        - title: Authority
           url: /ioos-assets-wiki-upd-v0-5.html#authority
           output: web
 
-        - title: "Label"
+        - title: Label
           url: /ioos-assets-wiki-upd-v0-5.html#label
           output: web
 
-        - title: "Component"
+        - title: Component
           url: /ioos-assets-wiki-upd-v0-5.html#component
           output: web
 
-      - title: "Convention for Specific Asset Types"
+      - title: Convention for Specific Asset Types
         output: web
 
         subfolderitems:
 
-        - title: "Station Identifiers"
+        - title: Station Identifiers
           url: /ioos-assets-wiki-upd-v0-5.html#station-identifiers
           output: web
 
-        - title: "Sensor Identifiers"
+        - title: Sensor Identifiers
           url: /ioos-assets-wiki-upd-v0-5.html#sensor-identifiers
           output: web
 
-        - title: "Version Control"
+        - title: Version Control
           url: /ioos-assets-wiki-upd-v0-5.html#version-control
           output: web
 
-        - title: "Survey Identifiers"
+        - title: Survey Identifiers
           url: /ioos-assets-wiki-upd-v0-5.html#survey-identifiers
           output: web
 
-  - title: "Version 0.1 (Deprecated)"
+  - title: Version 0.1 (Deprecated)
     output: web, pdf
 
     folderitems:
@@ -223,60 +223,60 @@ entries:
 
       subfolders:
 
-      - title: "General Identifier Convention"
+      - title: General Identifier Convention
         output: web
 
         subfolderitems:
 
-        - title: "Use of Uniform Resource Names"
+        - title: Use of Uniform Resource Names
           url: /ioos-assets-wiki-init-v0-1.html#use-of-uniform-resource-names
           output: web
 
-        - title: "Case Insensitivity"
+        - title: Case Insensitivity
           url: /ioos-assets-wiki-init-v0-1.html#case-insensitivity
           output: web
 
-        - title: "Identifier Pattern"
+        - title: Identifier Pattern
           url: /ioos-assets-wiki-init-v0-1.html#identifier-pattern
           output: web
 
-        - title: "Asset Type"
+        - title: Asset Type
           url: /ioos-assets-wiki-init-v0-1.html#asset-type
           output: web
 
-        - title: "Authority"
+        - title: Authority
           url: /ioos-assets-wiki-init-v0-1.html#authority
           output: web
 
-        - title: "Label"
+        - title: Label
           url: /ioos-assets-wiki-init-v0-1.html#label
           output: web
 
-        - title: "Component"
+        - title: Component
           url: /ioos-assets-wiki-init-v0-1.html#component
           output: web
 
-      - title: "Convention for Specific Asset Types"
+      - title: Convention for Specific Asset Types
         output: web
 
         subfolderitems:
 
-        - title: "Station Identifiers"
+        - title: Station Identifiers
           url: /ioos-assets-wiki-init-v0-1.html#station-identifiers
           output: web
 
-        - title: "Sensor Identifiers"
+        - title: Sensor Identifiers
           url: /ioos-assets-wiki-init-v0-1.html#sensor-identifiers
           output: web
 
-        - title: "Version Control"
+        - title: Version Control
           url: /ioos-assets-wiki-init-v0-1.html#version-control
           output: web
 
-        - title: "Survey Identifiers"
+        - title: Survey Identifiers
           url: /ioos-assets-wiki-init-v0-1.html#survey-identifiers
           output: web
 
-        - title: "Visual Observations from Ships"
+        - title: Visual Observations from Ships
           url: /ioos-assets-wiki-init-v0-1.html#visual-observations-from-ships
           output: web
