@@ -4,8 +4,6 @@ tags: []
 keywords: notes, tips, cautions, warnings, admonitions
 last_updated: July 3, 2016
 summary: Rules used by the IOOS program to assign an identifier to IOOS-related observing assets.
-sidebar: mydoc_sidebar
-#topnav: topnav
 toc: false
 #permalink: sos-wsdd-github-notoc.html
 ---

@@ -4,8 +4,6 @@ tags: []
 keywords: notes, tips, cautions, warnings, admonitions
 last_updated: July 3, 2016
 summary: The first draft version of the guidance for the asset identification process. For the data to be discoverable and accessible through the IOOS Data Catalog, all observing assets must be identified in accord with the present IOOS Convention.
-sidebar: mydoc_sidebar
-#topnav: topnav
 toc: false
 #permalink: sos-wsdd-github-notoc.html
 ---
